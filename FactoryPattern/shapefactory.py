@@ -1,6 +1,7 @@
+from abstractshapefactory import AbstractShapeFactory
 from shapes import *
 
-class ShapeFactory:
+class ShapeFactory(AbstractShapeFactory):
     def create_shape(self, name):
         if name == 'circle':
             radius = input("Enter the radius of the circle: ")
